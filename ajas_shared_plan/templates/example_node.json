@@ -1,0 +1,16 @@
+{
+    ".metadata": {
+        "description": "Example node that builds on Tecnoree Platform",
+        "template": [
+            "managed_node",
+            "example_repo"
+        ],
+        "ui": {
+            "important": true
+        }
+    },
+    "classes": [
+        "example"
+    ],
+    "module": {}
+}

@@ -1,0 +1,20 @@
+{
+    ".metadata": {
+        "description": "Template that provides ajas_shared_plan product specific repository",
+        "template": []
+    },
+    "classes": [
+        "yum"
+    ],
+    "module": {
+        "yum": {
+            "product_repositories": {
+                "ajas_shared_plan": {
+                    "name": "ajas_shared_plan-1.0.3-x86_64",
+                    "gpgcheck": false,
+                    "enable": true
+                }
+            }
+        }
+    }
+}

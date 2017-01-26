@@ -1,0 +1,45 @@
+{
+    "title": "Tecnotree PPIN Package Removal/Installation",
+    "description": "Re-installation for PPIN Solaris Packages",
+
+    "type": "object",
+    "properties": {
+        "ppin_pkgupdate": {
+            "title": "Tecnotree PPIN Packages",
+            "description": "",
+
+            "type": "object",
+            "additionalProperties": {
+                "title": "Package name",
+                "description": "Short Name of the Tecnotree Package",
+
+                "type": "object",
+                "properties": {
+                    "pkg_type": {
+                        "title": "Package Type",
+                        "description": "Set if installing patch packages",
+                        "type": "string",
+                        "enum": [
+                            "Base",
+                            "Patch"
+                        ],
+                        "default": "Base"
+                    },
+                    "pkg_repo": {
+                        "type": "string",
+                        "description": "Location containing tecnotree packages - Cannot be a http when using a response file",
+                        "title": "Tecnotree PPIN Package Location",
+                        "default": "/net/shlabsun1/archive/CCS/NightlyBuild/PPIN/"
+                    },
+                    "install_files": {
+                        "type": "string",
+                        "description": "Location containing tecnotree install files - automate.txt,install.admin, *.resp  - Cannot be a http when using a response file",
+                        "title": "Tecnotree PPIN installation files",
+                        "default": "/net/shlabsun1/archive/CCS/NightlyBuild/PPIN/"
+                    }
+                }
+            }
+        }
+    }
+}
+

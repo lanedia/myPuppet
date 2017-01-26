@@ -1,0 +1,13 @@
+{
+    ".metadata": {
+        "description": "Example template that does not have any dependencies",
+        "template": [],
+        "ui": {
+            "important": true
+        }
+    },
+    "classes": [
+        "example"
+    ],
+    "module": {}
+}

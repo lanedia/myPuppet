@@ -1,0 +1,23 @@
+{
+    ".metadata": {
+        "description": "Tecnotree Shared Plan runtime environment",
+        "template": [
+            "managed_node"
+        ],
+        "ui": {
+            "important": true
+        }
+    },
+    "classes": [ "ajas_shared_plan" ],
+    "module": {
+        "yum": {
+            "product_repositories": {
+                "ajas_shared_plan": {
+                    "enable": true,
+                    "gpgcheck": false,
+                    "name": "ajas_shared_plan_1.0.2-x86_64"
+                }
+            }
+        }
+    }
+}

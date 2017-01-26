@@ -1,0 +1,18 @@
+{
+    ".metadata": {
+        "description": "This node builds on Tecnoree PPIN Platform",
+        "template": [
+        ],
+        "ui": {
+            "important": true
+        }
+    },
+    "classes": [
+        "ppin_pkg_update"
+    ],
+    "module": {},
+    "role": [
+        "ppin_node"
+    ]
+
+}

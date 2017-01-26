@@ -1,0 +1,14 @@
+{
+    "name": "Example",
+    "description": "Shows only configuration parameters regarding the example module",
+    "weight": 100,
+
+    "module": {
+        "example": {
+            "expanded": true,
+            "paths": [
+                "/"
+            ]
+        }
+    }
+}

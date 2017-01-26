@@ -1,0 +1,13 @@
+{
+        "name": "Advanced",
+        "description": "Shows all configuration parameters",
+        "weight": 1000,
+
+        "module": {
+                "*": {
+                        "paths": [
+                                "/"
+                        ]
+                }
+        }
+}

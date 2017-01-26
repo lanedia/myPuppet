@@ -1,0 +1,19 @@
+{
+    "title": "Example",
+    "description": "Example module shows how data is sent to puppet",
+
+    "type": "object",
+    "properties": {
+        "boolean_parameter": {
+            "type": "boolean",
+            "title": "A boolean",
+            "description": "Allows user to toggle some setting on/off"
+        },
+        "string_parameter": { 
+            "type": "string",
+            "title": "A string",
+            "description": "Allows user to enter some text"
+        }
+    },
+    "additionalProperties": false
+}
