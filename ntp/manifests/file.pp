@@ -9,5 +9,6 @@ class ntp::file ($template = $ntp::params::template, $servers = $ntp::params::de
 		ensure	=> file,
 		require	=> Package['ntp'],
 #		content	=> template("ntp/${template}.erb"),
+		content	=> template("ntp/${template}.erb"),
 	}
 }

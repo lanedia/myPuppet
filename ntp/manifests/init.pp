@@ -5,6 +5,7 @@ class ntp ($package = $ntp::params::package_name) inherits ntp::params {
 		ensure	=> present,
 	}
 
+
   #class { 'ntp::file' : template => 'hello', }
   class { 'ntp::file' : template => "$ntp::params::template", }
   
