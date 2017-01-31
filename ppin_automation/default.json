@@ -1,0 +1,54 @@
+ /var/lib/hiera/master/ctp-1-master4103d.json
+{
+  "classes": [
+    "ppin_pkg_update",
+    "jumpstart",
+    "pkgadd",
+    "platform",
+    "puppet",
+    "ssh",
+    "sudo",
+    "nagios",
+    "network",
+    "ntp"
+  ],
+  "domain": "nova.dev",
+  "environment": "PPIN_Automation",
+  "jumpstart::primary_mac": "11:22:33:44:55:66",
+  "jumpstart::primary_timezone": "UTC",
+  "nagios::client": {
+    "enabled": true,
+    "tags": [
+      "nagios_client",
+      "solaris"
+    ]
+  },
+  "network::interfaces": {
+    "primary": {
+      "ipaddress": "192.168.53.68",
+      "network": "system-net"
+    }
+  },
+  "pkgadd::pkgutil": [],
+  "ppin_pkg_update::ppin_pkgupdate": {
+    "TINScgwDB": {
+      "install_files": "/net/shlabsun1/archive/CCS/MasterBuild/PPIN/",
+      "pkg_repo": "/net/shlabsun1/archive/CCS/MasterBuild/PPIN/240400/",
+      "pkg_type": "Patch"
+    },
+    "TINScgwPP": {
+      "install_files": "/net/shlabsun1/archive/CCS/MasterBuild/PPIN/",
+      "pkg_repo": "/net/shlabsun1/archive/CCS/MasterBuild/PPIN/240400/",
+      "pkg_type": "Patch"
+    },
+    "TINSppvoice": {
+      "pkg_repo": "/net/shlabsun1/archive/CCS/MasterBuild/PPIN/4100400/",
+      "pkg_type": "Patch"
+    }
+  },
+  "role": [
+    "ppin_node",
+    "solaris"
+  ],
+  "ssh::rootlogin": "no"
+}
